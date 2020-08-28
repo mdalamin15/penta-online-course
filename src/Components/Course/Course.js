@@ -12,7 +12,7 @@ const Course = (props) => {
             <h2>{Name}</h2>
             <p>price:${price}</p>
             <p>Course Time:{Duration}</p>
-            <button onClick={() => handleAddCourse(props.course)}>Enroll Now</button>
+            <button className="enroll-now" onClick={() => handleAddCourse(props.course)}>Enroll Now</button>
              
         </div>
        

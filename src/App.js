@@ -28,7 +28,11 @@ function App() {
        <Header></Header>
        <h2>Total courses:{course.length}</h2>
        <h4>Enrolled Courses:{cart.length}</h4>
+       
        <Cart cart={cart}></Cart>
+       <button className="pay-now">
+         Pay Now
+       </button>
        {
          course.map(course=> <Course course={course} handleAddCourse={handleAddCourse}></Course>)
        }
